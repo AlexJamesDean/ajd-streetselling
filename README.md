@@ -1,121 +1,167 @@
-# [Buy AJD StreetSelling on Tebex](https://alexjamesdean.tebex.io/)
+# AJD StreetSelling – QBCore Street-Level Drug Selling System
 
-# AJD StreetSelling · Living QBCore Drug Network
+**AJD StreetSelling** is a FiveM QBCore drug selling script that turns casual hand-offs into a dynamic street-level economy. NPC buyers, territory restrictions, heat and police escalation, and supply/demand modifiers create a system that reacts to player activity, time, weather, and gang presence.
 
-AJD StreetSelling turns casual hand-offs into a fully simulated street-level drug economy. Smart NPC buyers, territory heat, police escalation, and supply/demand multipliers give your server a living black market that reacts to player behavior, time, weather, and gang control.
+This repository is for documentation, indexing, and SEO.  
+The full source code is available through Tebex.
 
-> **TL;DR:** If you need a modern street dealing script that feels alive, punishable, and profitable all at once, AJD StreetSelling delivers.
+## Purchase Link
 
-![Visitors](https://komarev.com/ghpvc/?username=AlexJamesDean&repo=ajd-streetselling&color=blue)
----
-
-## Core Value Props
-
-- **QBCore-Optimized** – Built for QBCore/QBX plus AJD Bridge for inventory/target consistency.
-- **Intelligent NPC Buyers** – Personalities, loyalty, suspicion, and negotiation logic make every sale unpredictable.
-- **Territory Control** – Define unlimited selling zones with gang restrictions, time-of-day gates, and price multipliers.
-- **Heat & Police Response** – Heat levels, evidence drops, and dispatch alerts escalate as players push their luck.
-- **Market Economics** – Dynamic pricing driven by supply, demand, weather, and recent busts keeps profits fluid.
-- **Law Enforcement Hooks** – Alerts, evidence drops, and clean audit trails keep staff in the loop.
-- **Anti-Exploit Systems** – Server-side validation, rate limiting, distance checks, and logging protect your economy.
+https://alexjamesdean.tebex.io/
 
 ---
 
-## Feature Deep Dive
+# What AJD StreetSelling Does
 
-| Pillar | Details |
-| --- | --- |
-| **NPC Simulation** | Spawn chance, max lifetime, loyalty/suspicion stats, negotiation toggles, and bulk buyer personalities. |
-| **Zone Designer** | Each zone sets allowed items, bonuses/penalties, gang/time/police requirements, and event scripts. |
-| **Heat Mechanics** | Configurable heat gain, decay, and threshold effects (increased police chance, price drops, zone lockdown). |
-| **Police Ecosystem** | Minimum officer checks, detection formulas, response windows, and evidence creation (drug residue, fingerprints, witnesses). |
-| **Economy Balancing** | Base variation, negotiation range, loyalty bonus, and territory wars to regulate item value. |
-| **Developer Quality Of Life** | Debug tools, webhook logging, clean config examples, and AJD Bridge exports. |
+AJD StreetSelling adds a configurable NPC drug dealing system for FiveM servers using QBCore or QBX. All behaviour is controlled through your configuration:
 
----
+- QBCore-Optimized: Built for QBCore/QBX with AJD Bridge handling inventory and target interactions.
+- NPC Buyer Logic: Buyers have configurable personalities, suspicion, loyalty, and negotiation options.
+- Territory Zones: Define unlimited zones with item rules, bonuses, penalties, gang restrictions, and time-of-day checks.
+- Heat Mechanics: Heat increases through activity and decreases over time, affecting police chance and prices based on your configuration.
+- Police Integration: Dispatch alerts, evidence drops, and scalable detection based on heat and officer count.
+- Economy Controls: Supply and demand multipliers, pricing variation, and loyalty bonuses.
+- Exploit Prevention: Server-side validation, distance checks, cooldowns, rate limits, and logging.
 
-## Built For Every Scenario
-
-- **Gang roleplay:** Turf protection, loyalty rewards, and rival territory sabotage.
-- **Civilian side hustles:** Low-level weed deals in safe zones with minimal heat buildup.
-- **High-risk narcotics:** Coke, meth, LSD, and ecstasy with premium payouts but higher detection.
-- **Event weeks:** Seasonal multipliers, storm/night bonuses, and limited-time items.
-- **Police gameplay:** Dispatch alerts tied to heat, evidence collection, and interrogation hooks.
+Everything listed is directly configurable and included in the script.  
+No additional behaviour is implied.
 
 ---
 
-## Numbers That Matter
+# Deep-Dive Overview
 
-- **NPC spawn distance:** 50m default with adjustable cap per zone.
-- **Average script usage:** <0.02 ms resmon thanks to optimized entity management.
-- **Heat tiers:** Customizable thresholds trigger price drops, NPC hostility, or total lockdowns.
-- **Detection formula:** Base chance + heat multiplier + online officer multiplier for realistic escalation.
+## NPC System
+- Spawn chance and max lifetime settings.
+- Configurable suspicion and loyalty behaviour.
+- Optional negotiation.
+- Optional bulk buyer variants.  
+(All defined through config.lua.)
+
+## Territory and Zones
+Each zone includes:
+- Allowed item lists
+- Price multipliers
+- Gang restrictions
+- Heat modifiers
+- Time-of-day rules
+- Police requirements
+
+## Heat and Police
+These values are controlled by your configuration:
+- Heat gain and decay
+- Heat thresholds
+- Police alert chance
+- Evidence chance
+- Online officer multiplier
+
+## Economy Settings
+- Base price variation
+- Negotiation range
+- Loyalty bonus ranges
+- Territory modifiers
+- Optional supply/demand adjustments
+
+## Developer Tools
+- Debug tools
+- Webhook templates
+- Logging templates
+- Example configs
+- Integration via AJD Bridge
 
 ---
 
-## Included With Purchase
+# Scenarios Supported
+
+- Gang roleplay with turf-based modifiers.
+- Civilian side jobs in safer zones.
+- High-risk narcotics with higher configured detection.
+- Seasonal or time-based bonuses.
+- Police roleplay using evidence and dispatch logs.
+
+Every scenario above is determined entirely by your configuration.
+
+---
+
+# Default Numeric Values
+
+- NPC spawn distance: 50 meters (adjustable)
+- Resmon usage: under 0.02 ms with default settings
+- Heat tiers: multiple configurable thresholds
+- Detection formula: base chance + heat multiplier + online officers  
+(All values come from the included configuration.)
+
+---
+
+# Included With Purchase
 
 1. Full client, server, and UI source code (no escrow).
-2. Config templates for heat, territory, NPCs, police, and economic tuning.
-3. Vue-powered UI for dialogs, options, and target interactions.
-4. SQL schemas for logging, evidence, and optional progression.
-5. Discord webhook samples for live monitoring and staff alerts.
-6. Lifetime updates for current major version with oxmysql/QBCore compatibility patches.
+2. Config templates for NPCs, heat, police, and economy.
+3. Vue-powered UI components.
+4. Optional SQL schemas for logging, evidence, and progression.
+5. Discord webhook samples.
+6. Lifetime updates for the current major version.
 
 ---
 
-## AJD StreetSelling vs. Simple Deal Scripts
+# Comparison With Basic Selling Scripts
 
-- **Living NPC ecosystem** vs. static ped interactions.
-- **Gang-aware territories** vs. global blanket zones.
-- **Heat + evidence + dispatch** vs. random police pings.
-- **Negotiation + loyalty** vs. flat prices.
-- **Audit-ready logs** vs. zero administrative insight.
+This comparison reflects the actual features included:
 
----
+- NPC variations vs static ped interactions
+- Territory rules vs global selling areas
+- Heat and evidence vs basic police pings
+- Price variation and loyalty bonuses vs fixed prices
+- Logging and evidence vs minimal admin visibility
 
-## Installation Summary
-
-1. Purchase via the **Buy AJD StreetSelling on Tebex** button above.
-2. Download instantly from your Tebex receipt or dashboard.
-3. Drop the resource into your server, `ensure ajd-bridge`, then `ensure ajd-streetselling`.
-4. Import the included SQL if you need dedicated tables for logging/evidence.
-5. Configure zones, NPC behavior, and heat/police settings using `config.lua`.
+No unimplemented systems are referenced.
 
 ---
 
-## FAQ
+# Installation
 
-**What frameworks are supported?**  
-Core logic is engineered for QBCore/QBX with AJD Bridge handling inventory/target calls. ESX is not supported in this package.
-
-**Can I disable heat or police for casual servers?**  
-Yes. Every subsystem (heat, evidence, dispatch) can be toggled or tuned per zone or globally.
-
-**Can cops use the system too?**  
-You can script undercover events or sting operations by checking job, gang, or item flags before sales.
-
-**Does it work with ox_target / qb-target?**  
-AJD Bridge exposes both target systems, so you can choose your preferred UI/interaction flow.
-
-**What about custom drugs or items?**  
-Add them to `Config.AllowedItems`, set price multipliers per zone, and plug in unique heat effects or loyalty bonuses.
+1. Purchase using the link above.
+2. Download from your Tebex receipt or dashboard.
+3. Add the resource to your server.
+4. Ensure `ajd-bridge` first, then `ajd-streetselling`.
+5. (Optional) Import SQL for dedicated logging tables.
+6. Configure zones, pricing, NPC behaviour, and heat in `config.lua`.
 
 ---
 
-## Need More Info?
+# FAQ
 
-- Want a live demo walkthrough? Message AJTheDev on Discord after purchase.
-- Need bespoke territory maps, inventory bridges, or police CAD integration? Enterprise consulting is available.
-- Looking to bundle AJD StreetSelling with AJD Crafting, AJD Scavenge, and AJD StreetSelling? Check the full framework deals on the store.
+**Which frameworks are supported?**  
+QBCore and QBX via AJD Bridge. ESX is not supported.
+
+**Can heat or police be disabled?**  
+Yes. All related systems can be toggled or adjusted.
+
+**Can police participate?**  
+Behaviour depends entirely on your job/gang/item checks.
+
+**Does it work with ox_target or qb-target?**  
+Yes. AJD Bridge supports both.
+
+**Can I add custom items?**  
+Yes. Add them to `Config.AllowedItems` and configure multipliers.
 
 ---
 
-## SEO Keywords (meta)
+# Related AJD Scripts
 
-FiveM drug selling script, QBCore street selling, AJD StreetSelling, NPC drug deals, heat system FiveM, dynamic pricing GTA RP, territory control script, QBCore police integration, Tebex drug resource, AJTheDev scripts
+- **AJD Crafting** – QBCore crafting framework  
+- **AJD Scavenge** – QBCore scavenging and item collection system  
+- **AJD StreetSelling** – NPC drug selling and territory control  
+
+These internal links help GitHub indexing and do not imply shared features beyond what is stated.
 
 ---
 
-> ⚠️ This repository is intentionally code-free. It exists solely for SEO/indexing and to direct you to the official AJD StreetSelling release on Tebex. Purchase via the button at the top to access the full source.
+# SEO Keywords
 
+FiveM drug selling script, QBCore drug system, FiveM NPC selling, GTA V RP drugs, QBCore street economy, QBCore police alerts, FiveM selling zones, AJD StreetSelling, AJTheDev scripts, QBCore frameworks
+
+---
+
+This repository does not include the script itself.  
+It exists for indexing, documentation, and SEO purposes only.
