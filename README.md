@@ -165,3 +165,7 @@ FiveM drug selling script, QBCore drug system, FiveM NPC selling, GTA V RP drugs
 
 This repository does not include the script itself.  
 It exists for indexing, documentation, and SEO purposes only.
+
+I fix the bugs other devs gaslight you about.
+AI tools, FiveM systems, automation pipelines.
+Build it, break it, resurrect it: 👉 https://AJThe.Dev
